@@ -7,7 +7,7 @@
         <table>
             <tr>
                 <td>ФИО</td>
-                <td><input type="text" id="fio" name="fio" value="<?=$user['fio'];?>" maxlength="255"/></td>
+                <td><input type="text" id="fio" name="fio" value="<?=htmlspecialchars($user['fio'], ENT_QUOTES, 'UTF-8');?>" maxlength="255"/></td>
             </tr>
             <tr>
                 <td></td>

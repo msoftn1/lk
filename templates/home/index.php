@@ -3,7 +3,7 @@
     <div>
         <table>
             <tr>
-                <td>Здравствуйте, <?=$user['fio'];?></td>
+                <td>Здравствуйте, <?=htmlspecialchars($user['fio'], ENT_QUOTES, 'UTF-8');?></td>
             </tr>
             <tr>
                 <td><a href="/changePassword">Сменить пароль</a></td>
